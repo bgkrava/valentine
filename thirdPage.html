@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благодаря!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff665c ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+			
+			background-image: url('kk.avif'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e64a40;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>НЯМАШ ТАКАВА ОПЦИЯ БЕБЕ</h1>
+    <p>ТАКА ЧЕ НАТИСНИ БУТОНЧЕТО И ПРОБВАЙ ПАК 💖</p>
+    <button class="button" onclick="goBack()">Назад към началото</button>
+</div>
+
+<script>
+    function goBack() {
+        // Връща ни обратно към първата страница
+        window.location.href = "love.html";
+    }
+</script>
+
+</body>
+</html>

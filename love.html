@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Съобщение за Валентинка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+			
+			background-image: url('ow.jpg'); /* Заменете 'your-image.jpg' с пътя към вашето изображение */
+            background-size: cover; /* Изображението ще покрива целия екран */
+            background-position: center; /* Центриране на изображението */
+            background-attachment: fixed; /* Фонът ще остане неподвижен при скролиране */
+        }
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #c2a1ff ;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff31dd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Ще бъдеш ли моя Валентинка?</h1>
+    <p>Ти си най-специалната за мен и искам да прекарам този Свети Валентин с теб!</p>
+    <button class="button" onclick="goToNextPage()">Да, ще бъда твоя Валентинка!</button>
+    <button class="button" onclick="reloadPage()">НЕ НЯМА!!!</button>
+</div>
+
+<script>
+    function goToNextPage() {
+        // Пренасочване към втората страница (например secondPage.html)
+        window.location.href = "secondPage.html";
+    }
+
+    function reloadPage() {
+        window.location.href = "thirdPage.html"
+    }
+</script>
+
+</body>
+</html>
